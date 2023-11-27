@@ -1,5 +1,5 @@
-# InfoPagFinal
-Entrega do projeto de folha de pagamento automatizada Unip 2023
+# InfoPagFinal WEB
+Entrega do projeto de folha de pagamento automatizada Unip 2023 
 Integrantes: Enzo Mariano dos Anjos
 Henrique Mitusi Azevedo Yamasaki
 Jefferson Luiz dos Santos Junior
