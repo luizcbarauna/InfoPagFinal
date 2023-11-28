@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>InfoPag</title>
+    <link href="menufuncionario.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="main-login">
+        <div class="titulo">
+            <h1>InfoPag</h1>
+        </div>
+        <h2>Bem-Vindo! João da Silva</h2>
+
+        <!-- Botão com ícone de Contracheque -->
+        <button class="btn btn-contracheque" id="consultarContracheque">
+            <i class="bi bi-cash"></i> Contracheque
+        </button>
+
+        <!-- Botão com ícone de Rendimento -->
+        <button class="btn btn-rendimento" id="consultarRendimento">
+            <i class="bi bi-receipt"></i> Rendimento
+        </button>
+
+        <!-- Botão com ícone de Dados Pessoais -->
+        <button class="btn btn-dadospessoais" id="consultarDadosPessoais">
+            <i class="bi bi-person"></i> Dados Pessoais
+        </button>
+
+        
+        <!-- Botão "Sair" com um identificador ou classe para selecioná-lo -->
+        <button class="btn btn-sair" onclick="exibirPopupSair()">
+            <i class="bi bi-box-arrow-right"></i> Sair
+        </button>
+    
+    </div>
+
+    <script src="contrachequeFUNCIONARIO.js"></script>
+    <script src="dadospessoaisFUNCIONARIO.js"></script>
+    <script src="rendimentoFUNCIONARIO.js"></script>
+    <script src="popupsairFUNCIONARIO.js"></script>
+
+</body>         
+</html>

@@ -1,0 +1,188 @@
+/* Define uma margem padrão para o body */
+body {
+  margin: 0;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Estilos para o contêiner principal com fundo branco */
+.main-login {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column; /* Para alinhar o conteúdo verticalmente */
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Adicione position: relative; */
+}
+
+/* Estilos para o retângulo roxo (título) */
+.titulo {
+  background: #0f0f33;
+  border-style: solid;
+  border-color: #03030c;
+  border-width: 6px;
+  width: 350px;
+  height: 120px;
+  position: absolute; /* Tornar o título absoluto */
+  top: 0; /* Colocar no topo */
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  box-shadow: 0px 0px 4px;
+  box-sizing: border-box;
+}
+
+/* Estilos para o título "InfoPag" */
+.titulo > h1 {
+  color: bisque;
+  font: 400 64px "Marko One", sans-serif;
+  white-space: nowrap;
+  text-align: center;
+  position: absolute; /* Tornar o título absoluto */
+  top: 15%; /* Colocar no meio vertical */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* titulo seja bem vindo */
+h2 {
+  color: #000000;
+  text-align: left;
+  font: 700 32px "Lusitana", sans-serif;
+  text-decoration: underline;
+  width: 501px;
+  height: 22px;
+  position: absolute;
+  top: 150px; /* Ajuste conforme necessário */
+  left: 250px; /* Ajuste conforme necessário */
+  font-size: 25px;
+}
+
+
+/* Estilos para os botões */
+.btn{
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border: 3px solid #0F0F33;
+  cursor: pointer;
+  font: 400 31px "Lusitana", sans-serif;
+  font-style: normal;
+  text-align: center;
+  width: 225px;
+  height: 48px;
+  font-size: 18px;
+  margin: 20px auto; /* Margens superior e inferior de 20px e centralizado horizontalmente */
+}
+
+
+/* Estilos específicos para os botões */
+.btn-contracheque{
+  position: absolute;
+  box-shadow: 0px 0px 4px;
+  box-sizing: border-box;
+  top: 250px; /* Ajuste conforme necessário */
+  left: 250px; /* Ajuste conforme necessário */
+}
+
+.btn-rendimento {
+  text-align: center;
+  box-shadow: 0px 0px 4px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 250px; /* Ajuste conforme necessário */
+  left: 640px;
+}
+
+.btn-dadospessoais {
+  position: absolute;
+  box-shadow: 0px 0px 4px;
+  box-sizing: border-box;
+  top: 250px; /* Ajuste conforme necessário */
+  right: -5%; /* Ajuste conforme necessário */
+  white-space: nowrap;
+  left: 300px;
+}
+
+.btn-criarcadastro {
+  position: absolute;
+  box-shadow: 0px 0px 4px;
+  box-sizing: border-box;
+  top: 250px; /* Ajuste conforme necessário */
+  right: 250px; /* Ajuste conforme necessário */
+  white-space: nowrap;
+}
+
+/* Estilos para o botão "Sair" */
+.btn-sair {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 95px;
+  height: 65px;
+  text-align: center; /* Ajuste conforme necessário */
+  position: absolute; /* Tornar o botão absoluto */
+  top: -30px; /* Posição superior */
+  right:70px; /* Posição à direita */
+  
+  
+  
+}
+
+/* Estilo para o ícone dentro do botão "Sair" */
+.btn-sair i{
+  background-color: white;
+  margin-left: 10px; /* Mude para "margin-left" para posicionar o ícone à direita */
+  font-size: 30px;;
+}
+.btn-sair > a{
+    color: #0F0F33;
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+/* Adicionando hover para os botões*/
+
+.btn-rendimento:hover{   
+    background-color: bisque;
+}
+.btn-rendimento:active{
+    background-color: #0F0F33;
+    color: white;
+    
+}
+.btn-contracheque:hover{   
+    background-color: bisque;
+}
+.btn-contracheque:active{
+    background-color: #0F0F33;
+    color: white;
+    
+}.btn-dadospessoais:hover{   
+    background-color: bisque;
+}
+.btn-dadospessoais:active{
+    background-color: #0F0F33;
+    color: white;
+    
+}.btn-criarcadastro:hover{   
+    background-color: bisque;
+}
+.btn-criarcadastro:active{
+    background-color: #0F0F33;
+    color: white;
+    
+}
+
+/* Estilos para o seletor de mês e ano */
+.month-selector, .year-selector {
+  font-family: Arial;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  position: absolute;
+}

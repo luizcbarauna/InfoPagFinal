@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <title>InfoPag</title>
+</head>
+
+<body>
+  <div class="main-login">
+    <div class="left-login">
+      <h1>Info<br>Pag</h1>
+      <img src="veccctor.png.png" class="imagem">
+    </div>
+    <div class="right-login">
+      <div class="card-login">
+        <h2>Login</h2>
+        <div class="textfield">
+          <input type="text" id="usuario" placeholder="Usuário">
+        </div>
+        <div class="textfield">
+          <input type="password" id="senha" placeholder="Senha">
+          <a href="redefinirsenha.html">Esqueci a senha</a>
+        </div>
+        <button class="btn-login" onclick="login()">
+          <a href="#">Entrar</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      var cpf = document.getElementById("usuario").value;
+      var senha = document.getElementById("senha").value;
+
+      if (cpf === "12345678900" && senha === "senha") {
+        // Redirect to menufuncionario page
+        window.location.href = "menufuncionario.html";
+      } else if (cpf === "00987654321" && senha === "senha") {
+        // Redirect to menu adm page
+        window.location.href = "menuadm.html";
+      } else {
+        // Handle invalid login (you can add an alert or error message)
+        alert("CPF ou senha inválidos. Tente novamente.");
+      }
+
+      // Limpar os campos após tentativa de login
+      document.getElementById("usuario").value = "";
+      document.getElementById("senha").value = "";
+    }
+  </script>
+</body>
+
+</html>

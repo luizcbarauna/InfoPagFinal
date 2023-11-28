@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 475px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #0F0F33;
+    box-shadow: 0px 0px 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+.left-login > h1{
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 400px;
+    position: relative;
+    height: 480px;
+    top: 50px;    
+}
+.right-login{  
+    width: 475px;
+    height: 568px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    box-shadow: 0px 0px 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: bisque;  
+}
+.card-login > h2{
+     font-size: 40px;
+     font-weight: 700;
+     line-height: normal;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #0F0F33;
+     text-align: center;
+     
+     
+     
+}    
+.imagem{
+   position: relative;
+   bottom: 79.17px;
+   width: 120px;  
+}
+.textfield{
+    display: flex;
+    flex-direction: column;
+    
+} 
+.textfield > input{
+    width: 310px;
+    height: 10px;
+    padding: 15px;
+    margin: 15px;
+    position: center;
+}
+.textfield > a{
+    position: relative;
+    left: 15px;
+}
+.btn-redefinir{
+    width: 225px;
+    height: 40px;
+    background-color: #0F0F33;
+    color: white;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+}
+.textfield > i{
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    bottom: 49px;
+    left: 315px;
+}
+.btn-redefinir > a{
+    text-decoration: none;
+    border: 0;
+    padding: 10px 80px;
+    color: white;
+}
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000;
+    font-family: Lusitana;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   
+  }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="novasenhaFunc.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <title>InfoPag</title>
+</head>
+
+<body>
+  <a href="./menuadm.html" class="back-button">
+    <i class="bi bi-chevron-left"></i></i> Voltar
+  </a>
+  <div class="main-login">
+    <div class="left-login">
+      <h1>Info<br>Pag</h1>
+      <img src="veccctor.png.png" class="imagem">
+    </div>
+    <div class="right-login">
+      <div class="card-login">
+        <h2>Redefinir Senha</h2>
+        <div class="textfield">
+          <input type="password" id="novaSenha" placeholder="Digite a nova senha">
+        </div>
+        <div class="textfield">
+          <input type="password" id="confirmarSenha" placeholder="Digite a senha novamente">
+        </div>
+        <button class="btn btn-redefinir" onclick="redefinirSenha()">
+          <i></i> Redefinir
+        </button>
+
+        <script>
+          function redefinirSenha() {
+            var novaSenha = document.getElementById("novaSenha").value;
+            var confirmarSenha = document.getElementById("confirmarSenha").value;
+
+            if (novaSenha === confirmarSenha) {
+              // Processar a lógica de redefinição de senha (por exemplo, enviar para o servidor)
+              exibirPopupRedefinir();
+            } else {
+              alert("As senhas não coincidem. Tente novamente.");
+            }
+
+            // Limpar os campos após tentativa de redefinição de senha
+            document.getElementById("novaSenha").value = "";
+            document.getElementById("confirmarSenha").value = "";
+          }
+
+          function exibirPopupRedefinir() {
+            // Crie um pop-up de "Senha Atualizada"
+            var PopupRedefinir = document.createElement("div");
+            PopupRedefinir.style.position = "fixed";
+            PopupRedefinir.style.background = "bisque";
+            PopupRedefinir.style.border = "2px solid #0F0F33";
+            PopupRedefinir.style.padding = "20px";
+            PopupRedefinir.style.textAlign = "center";
+            PopupRedefinir.style.fontFamily = "arial";
+            PopupRedefinir.style.fontSize = "20px";
+            PopupRedefinir.style.zIndex = "2";
+            PopupRedefinir.style.top = "50%";
+            PopupRedefinir.style.left = "50%";
+            PopupRedefinir.style.transform = "translate(-50%, -50%)";
+            PopupRedefinir.innerText = "Senha Atualizada!";
+
+            // Adicione o pop-up ao corpo do documento
+            document.body.appendChild(PopupRedefinir);
+
+            // Feche o pop-up após alguns segundos
+            setTimeout(function () {
+              document.body.removeChild(PopupRedefinir);
+            }, 2000); // O pop-up será removido após 2 segundos (2000 milissegundos)
+          };
+        </script>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

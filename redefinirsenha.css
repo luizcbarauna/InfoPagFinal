@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+  }
+  
+  .main-login {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-login {
+    width: 475px;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #0F0F33;
+    box-shadow: 0px 0px 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .left-login>h1 {
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 400px;
+    position: relative;
+    height: 480px;
+    top: 50px;
+  }
+  
+  .right-login {
+    width: 475px;
+    height: 568px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    box-shadow: 0px 0px 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: bisque;
+  }
+  
+  .card-login>h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    position: center;
+    color: #0F0F33;
+    text-align: center;
+    
+  }
+  
+  .card-login>h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+  }
+  
+  .imagem {
+    position: relative;
+    bottom: 79.17px;
+    width: 120px;
+  }
+  
+  .textfield {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .textfield>input {
+    width: 310px;
+    height: 10px;
+    padding: 15px;
+    margin: 15px;
+    position: relative;
+    bottom: 15px;
+  }
+  
+  .textfield>a {
+    position: relative;
+    left: 10px;
+  }
+  
+  .btn-voltar {
+    width: 200px;
+    height: 40px;
+    background-color: #0F0F33;
+    color: white;
+    position: relative;
+    top: 2px;
+  }
+  
+  .textfield>i {
+    font-size: 22px;
+    cursor: pointer;
+    position: relative;
+    bottom: 49px;
+    left: 315px;
+  }
+  
+  .btn-voltar>a {
+    text-decoration: none;
+    border: 0;
+    padding: 10px 85px;
+    color: white;
+    position: relative;
+    right: 10px;
+  
+  }
+.imagem-code{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 25px;
+}
+
