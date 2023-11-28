@@ -6,3 +6,7 @@ Jefferson Luiz dos Santos Junior
 João Pedro da Silva Fontes
 Kesiah Araujo Sofia
 Luiz Fernando Cortez Baraúna 
+
+AVISO:
+login funcionario: usuario: 12345678900 senha: senha
+login ADM: usuario: 00987654321 senha: senha
